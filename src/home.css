@@ -1,0 +1,80 @@
+:root {
+  --main-branding-color: #000000;
+  --secondary-branding-color: #6c63ff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 150px;
+}
+
+h1 {
+  color: var(--main-branding-color);
+  font-size: 96px;
+}
+.cta {
+  position: absolute;
+  animation: name ease-in-out;
+  animation-duration: 3s;
+  transition-timing-function: step-end;
+  animation-timing-function: linear;
+}
+@keyframes name {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 350px;
+  }
+}
+
+h4 {
+  color: #999999;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  bottom: 25px;
+}
+h2 {
+  display: block;
+  position: relative;
+  top: 35px;
+}
+button {
+  transform: 20px;
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#githublogo {
+  display: flex;
+  justify-content: center;
+  transform: scale(0.8);
+}
