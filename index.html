@@ -23,7 +23,7 @@
     style="background-color: none"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Leash Holden</a>
+      <a class="navbar-brand" href="#" id="leash">Leash Holden</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,7 +32,6 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        id="top"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,12 +48,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">About Me</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="coding.html">💻 Porfolio</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Porfolio</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="coding.html">💻 Coding</a>
+              </li>
+              <li><a class="dropdown-item" href="art.html">🎨 Art</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="art.html">🎨 Porfolio</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="certificate.html">Certificates</a>
           </li>
@@ -62,38 +72,49 @@
             <a class="nav-link" href="about.html#contact">Contact Me</a>
           </li>
         </ul>
+        <img
+          src="img/logo.svg"
+          alt="leash logo"
+          height="36"
+          class="ms-5 justify-content-center"
+          id="logo"
+        />
       </div>
     </div>
   </nav>
   <body>
-    <div class="cta" id="cta">
-      <h2>Hello, world 🤘</h2>
-      <h1>I am Leash!</h1>
-      <h4>Front-end developer, based in Portland, OR</h4>
-      <div class="button">
-        <button class="contactBtn">
-          <a href="coding.html">View my work</a>
-        </button>
-      </div>
-      <div class="arrow">
-        <a href="#about"
-          ><i
-            class="bi bi-arrow-down d-flex justify-content-end"
-            style="font-size: 8rem"
-          >
-          </i
-        ></a>
-        <img
-          src="img/Leash.svg"
-          alt="vector self portrait"
-          class="leash"
-          id="leash"
-        />
+    <span id="top"></span>
+    <div class="container" id="cta">
+      <div class="row">
+        <div class="col-6">
+          <h2>Hello, world 🤘</h2>
+          <h1>I am Leash!</h1>
+          <h4>Front-end developer, based in Portland, OR</h4>
+          <div class="button">
+            <button class="contactBtn">
+              <a href="coding.html">View my work</a>
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <img src="img/Leash.svg" alt="vector self portrait" class="leash" />
+        </div>
+        <div class="col">
+          <div class="arrow">
+            <a href="#about"
+              ><i
+                class="bi bi-arrow-down d-flex justify-content-end"
+                style="font-size: 8rem"
+              >
+              </i
+            ></a>
+          </div>
+        </div>
       </div>
       <div class="containerBody">
         <div class="indexBody" id="about">
-          <h2>About Me</h2>
-          <div class="aboutBody">
+          <h2 class="about p-5">About Me</h2>
+          <div class="aboutBody p-5 rounded">
             <div class="ab1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -129,7 +150,7 @@
         </div>
       </div>
       <div class="up" id="up">
-        <a href="#leash"
+        <a href="#top"
           ><i
             class="bi bi-arrow-up d-flex justify-content-end text-white"
             style="font-size: 6rem"
