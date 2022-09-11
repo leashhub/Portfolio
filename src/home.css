@@ -30,7 +30,7 @@ h1 {
   display: flex;
   position: relative;
 
-  justify-content: end;
+  justify-content: left;
 }
 .cta {
   animation: name ease-in-out;
@@ -107,4 +107,13 @@ a:visited {
 .arrow {
   justify-content: end;
   top: 400px;
+}
+#btmHeroButton {
+  display: flex;
+  justify-content: center;
+}
+.aboutBody {
+  justify-content: left;
+  position: relative;
+  float: left;
 }
