@@ -18,10 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
   </head>
-  <nav
-    class="navbar navbar-expand-lg ps-5 pe-5 fixed-top"
-    style="background-color: none"
-  >
+  <nav class="navbar navbar-expand-lg ps-5 pe-5 fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" id="leash">Leash Holden</a>
       <button
@@ -33,7 +30,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" id="toggle"></span>
       </button>
       <div
         class="collapse navbar-collapse justify-content-center"
@@ -66,9 +63,6 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="certificate.html">Certificates</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="about.html#contact">Contact Me</a>
           </li>
         </ul>
@@ -86,7 +80,7 @@
     <span id="top"></span>
     <div class="container" id="cta">
       <div class="row">
-        <div class="col-6">
+        <div class="col-sm-4">
           <h2>Hello, world 🤘</h2>
           <h1>I am Leash!</h1>
           <h4>Front-end developer, based in Portland, OR</h4>
@@ -96,11 +90,15 @@
             </button>
           </div>
         </div>
-        <div class="col">
-          <img src="img/Leash.svg" alt="vector self portrait" class="leash" />
+        <div class="col-sm-4">
+          <img
+            src="img/Leash.svg"
+            alt="vector self portrait"
+            class="leash pe-3"
+          />
         </div>
-        <div class="col">
-          <div class="arrow">
+        <div class="col-sm-4">
+          <div class="arrow" id="down">
             <a href="#about"
               ><i
                 class="bi bi-arrow-down d-flex justify-content-end"
@@ -116,11 +114,11 @@
           <h2 class="about p-5">About Me</h2>
           <div class="containerSkill">
             <div class="row">
-              <div class="col-2 ms-5">
+              <div class="col-md-2 ms-5">
                 <i class="bi bi-stars"></i> HTML/CSS/JS
               </div>
-              <div class="col-2 ms-5"><i class="bi bi-stars"></i> Figma</div>
-              <div class="col-2 ms-5"><i class="bi bi-stars"></i> UX/UI</div>
+              <div class="col-md-2 ms-5"><i class="bi bi-stars"></i> Figma</div>
+              <div class="col-md-2 ms-5"><i class="bi bi-stars"></i> UX/UI</div>
             </div>
           </div>
           <div class="aboutBody p-5 rounded">
@@ -136,9 +134,9 @@
               knowledge in web development and design.
               <br />
               <br />
-              When I am not coding, I am a professional artist and pirate. I
-              have a variety of exotic pets including a pet leech named
-              Parmesan. Feel free to drop me a line!
+              When I am not coding, I am an artist and pirate. I have a variety
+              of exotic pets including a pet leech named Parmesan. Feel free to
+              drop me a line!
             </div>
             <div class="button m-5" id="btmHeroButton">
               <button class="contactBtn">
