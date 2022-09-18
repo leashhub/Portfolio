@@ -1,19 +1,16 @@
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: inherit;
-}
-.navigation-links {
+body {
   display: flex;
-  margin-top: 40px;
+  font-family: "Nunito", sans-serif;
   justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
+  align-items: center;
+  text-align: left;
+  margin-top: 200px;
+  background-image: linear-gradient(
+    to left top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }
