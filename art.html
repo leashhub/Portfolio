@@ -9,56 +9,69 @@
   </head>
     <link rel="stylesheet" href="src/about.css" />
   </head>
-  <div class="container">
-    <nav
-      class="navbar navbar-expand-lg bg-light ps-5 pe-5 fixed-top"
-      style="background-color: #e3f2fd"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Leash</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="coding.html">💻 Porfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="art.html">🎨 Porfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="certificate.html">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+ 
+  <nav class="navbar navbar-expand-lg ps-5 pe-5 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="leash">Leash Holden</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" id="toggle"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Porfolio</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="coding.html">💻 Coding</a>
+              </li>
+              <li><a class="dropdown-item" href="art.html">🎨 Art</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Me</a>
+
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+      <img
+        src="img/logo.svg"
+        alt="leash logo"
+        height="36"
+        class="ms-5 justify-content-center"
+        id="logo"
+      />
+    </div>
+  </nav>
+  
   <body>
-    <h1>Art</h1>
+    <img src="img/inProgress.svg" alt="in progress frog"  class="mx-auto d-block">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
