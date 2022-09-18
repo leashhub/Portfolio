@@ -4,6 +4,9 @@ root {
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 800px) {
+  nav {
+    position: inherit;
+  }
   .about,
   .cta {
     justify-content: center;
@@ -11,22 +14,52 @@ root {
   }
   .leash {
     flex-direction: column;
+    justify-content: center;
+    transform: scale(50%);
+    display: block;
+    margin-bottom: -150px;
   }
-  #up,
-  #down {
-    display: none;
+
+  #logo {
+    display: flex;
+    align-content: initial;
+  }
+  .item-2 {
+    order: -1;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  body {
+    display: flex;
+    position: relative;
+    top: -250px;
+  }
+  .viewBtn {
+    width: 70%;
+    margin: 10px;
+  }
+  .contactBtn {
+    height: auto;
+  }
+  nav {
+    position: static top;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 body {
   display: flex;
-
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  align-items: center;
   text-align: left;
-  padding: 150px;
-  margin-top: 150px;
-
+  margin-top: 200px;
   background-image: linear-gradient(
     to left top,
     #051937,
@@ -80,7 +113,7 @@ button {
   padding: 20px 15px;
   border-radius: 5px;
   border: none;
-  box-shadow: var(--box-shadow);
+
   background: #09becf;
   color: #ffffff;
 
@@ -114,14 +147,14 @@ a:visited {
   transform: scale(0.8);
 }
 .leash {
-  display: flex;
+  display: block;
 
   justify-content: center;
 }
-.arrow {
-  justify-content: end;
-  top: 400px;
+.leashMobile {
+  display: none;
 }
+
 #btmHeroButton {
   display: flex;
   justify-content: center;
@@ -133,4 +166,21 @@ a:visited {
 }
 #toggle {
   color: #000000;
+}
+@media (max-width: 640px) and (min-width: 320px) {
+  .leashMobile {
+    justify-content: center;
+    transform: scale(50%);
+    display: block;
+    margin-bottom: -150px;
+    padding-left: 65px;
+  }
+  .leash {
+    display: none;
+  }
+  .about,
+  .cta {
+    justify-content: center;
+    text-align: center;
+  }
 }
