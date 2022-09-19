@@ -79,20 +79,7 @@ h1 {
 
   justify-content: left;
 }
-#cta {
-  animation: name ease-in-out;
-  animation-duration: 2s;
 
-  animation-timing-function: linear;
-}
-@keyframes name {
-  from {
-    margin-right: 0%;
-  }
-  to {
-    margin-left: 40%;
-  }
-}
 h4 {
   color: #ffffff;
   font-size: 20px;
@@ -163,11 +150,28 @@ a:visited {
   justify-content: left;
   position: relative;
   float: left;
+  bottom: 0;
 }
 #toggle {
   color: #000000;
 }
-@media (max-width: 640px) and (min-width: 320px) {
+.bi {
+  color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  #cta {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    top: 150px;
+  }
+}
+@media (max-width: 575px) and (min-width: 320px) {
   .leashMobile {
     justify-content: center;
     transform: scale(50%);
@@ -182,5 +186,19 @@ a:visited {
   .cta {
     justify-content: center;
     text-align: center;
+  }
+}
+#landing {
+  animation: hero ease-in 3s;
+  animation-duration: 2s;
+
+  animation-timing-function: linear;
+}
+@keyframes hero {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 10%;
   }
 }
