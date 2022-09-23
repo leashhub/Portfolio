@@ -1,7 +1,23 @@
 root {
-  --main-branding-color: #000000;
-  --secondary-branding-color: #6c63ff;
+  --heading-color: #000000;
+  --secondary-branding-color: #ffff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 200px;
+  background-image: linear-gradient(
+    to left top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }
 @media (max-width: 800px) {
   nav {
@@ -32,12 +48,10 @@ root {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-  }
-  body {
-    display: flex;
     position: relative;
     top: -250px;
   }
+
   .viewBtn {
     width: 70%;
     margin: 10px;
@@ -53,33 +67,25 @@ root {
 html {
   scroll-behavior: smooth;
 }
-body {
-  display: flex;
-  font-family: "Nunito", sans-serif;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  margin-top: 200px;
-  background-image: linear-gradient(
-    to left top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
-}
-h1 {
-  color: var(--main-branding-color);
-  font-size: 96px;
-}
+
 .containerBody {
   display: flex;
   position: relative;
 
   justify-content: left;
 }
+h1 {
+  color: var(--heading-color);
+  font-size: 96px;
+  justify-content: left;
+}
 
+h2 {
+  display: block;
+  position: relative;
+  top: 35px;
+  font-size: 50px;
+}
 h4 {
   color: #ffffff;
   font-size: 20px;
@@ -87,12 +93,6 @@ h4 {
   position: relative;
   bottom: 25px;
   margin-top: 20px;
-}
-h2 {
-  display: block;
-  position: relative;
-  top: 35px;
-  font-size: 50px;
 }
 button {
   transform: 20px;
@@ -128,11 +128,6 @@ a:visited {
   text-transform: capitalize;
 }
 
-#githublogo {
-  display: flex;
-  justify-content: center;
-  transform: scale(0.8);
-}
 .leash {
   display: block;
 
@@ -201,4 +196,33 @@ a:visited {
   to {
     margin-left: 10%;
   }
+}
+
+.projectBody {
+  margin: 10px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+
+  text-indent: 30px;
+  padding: 20px;
+  flex-direction: row;
+}
+.projectName {
+  text-align: center;
+  font-size: 38;
+  font-weight: 600;
+}
+.masonry {
+  columns: 2;
+  gap: 20px;
+  margin: 20px;
+}
+.masonry-item {
+  width: 100%;
+
+  margin-bottom: 20px;
+  align-content: center;
+  justify-content: center;
 }

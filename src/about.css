@@ -25,20 +25,21 @@ a {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
+
   color: white;
 }
 
 h1 {
-  color: var(--main-branding-color);
+  color: var(--heading-color);
   font-size: 96px;
-
-  display: block;
-  text-align: center;
 }
 h4 {
-  text-align: center;
-  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  bottom: 25px;
+  margin-top: 20px;
 }
 .container {
   display: flex;
@@ -59,7 +60,7 @@ h4 {
   align-content: center;
   justify-content: center;
 }
-p {
+.projectBody {
   margin: 10px;
   color: white;
   text-align: center;
