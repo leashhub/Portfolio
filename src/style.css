@@ -240,6 +240,16 @@ a:active {
 
 /*Contact Me */
 
+.contactPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 200px);
+}
+.contactBody {
+  flex: 1;
+}
 .contactLinks {
   text-align: center;
   color: #ffffff;
