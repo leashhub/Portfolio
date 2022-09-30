@@ -19,6 +19,7 @@ body {
     #a8eb12
   );
   background-size: auto;
+  flex-direction: column;
 }
 /*Hero and base style */
 @media (max-width: 800px) {
@@ -238,17 +239,6 @@ a:active {
 }
 
 /*Contact Me */
-
-.contactPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contactH1 {
-  display: flex;
-  flex-direction: column;
-  float: left;
-}
 
 .contactLinks {
   text-align: center;
